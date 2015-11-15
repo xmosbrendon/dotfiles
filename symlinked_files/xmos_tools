@@ -1,0 +1,24 @@
+# Viewfile based sandboxes
+export PATH=~/sandboxes/xgit/scripts:$PATH
+
+function sbox
+{
+  if [ -d ./infr_scripts_pl ]; then
+    cd ./infr_scripts_pl/Build/
+    source SetupEnv
+    cd ../..
+  else
+    echo "Not in a viewfile based sandbox"
+  fi
+}
+
+# Local tools
+alias sxtc13='source /Applications/XMOS_xTIMEcomposer_Enterprise_13.2.2/SetEnv.sh'
+alias sxtc14='source /Applications/XMOS_xTIMEcomposer_Enterprise_14.1.0/SetEnv.sh'
+alias sxtc='sxtc14'
+alias sxdoc='source /Applications/XMOS/xdoc/2.0.18/SetEnv.sh'
+alias sxpd='source /Applications/XMOS/xSoftIPTools/2.0.9/SetEnv.sh'
+alias use_xmos_test='export XDE_ONLINE_URL=https://test.xmos.com'
+
+# Test apps
+alias dxsig='~/sandboxes/xsig_dev/xsig/xsig/bin/run_xsig'
