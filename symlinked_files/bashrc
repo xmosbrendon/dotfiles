@@ -1,0 +1,38 @@
+# Colours
+export GREP_OPTIONS='--color=auto'
+if [ -f /opt/local/bin/src-hilite-lesspipe.sh ]; then
+  # Requires source-highlight install via MacPorts
+  export LESSOPEN="| /opt/local/bin/src-hilite-lesspipe.sh %s"     
+  export LESS=' -R '
+fi
+alias ls='ls -FG'
+alias tree="tree -C"
+
+# Bash autocomplete support
+source ~/.git-completion.bash
+
+# Prompt
+source ~/.git-prompt.sh
+export PS1='\h:\W \u$(__git_ps1 " (%s)")$'
+
+# Shortcuts
+alias path='echo $PATH | tr ":" "\n"'
+alias ll='ls -l'
+alias l='tree -L 1'
+alias slime='open -a "Sublime Text"'
+
+# Git shortcuts
+if [ -f ~/.git_shortcuts ]; then
+  source ~/.git_shortcuts
+fi
+
+# XMOS toolchain
+if [ -f ~/.xmos_tools ]; then
+  source ~/.xmos_tools
+fi
+
+# Phabricator
+if [ -d ~/.phabricator ]; then
+  export PATH=~/.phabricator/arcanist/bin:$PATH
+  source ~/.phabricator/arcanist/resources/shell/bash-completion
+fi

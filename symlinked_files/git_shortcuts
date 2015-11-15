@@ -1,0 +1,26 @@
+alias lg0='git log --graph --all --decorate=short'
+
+alias lg1="git log --graph --abbrev-commit --decorate --date=relative --format=f
+ormat:'%C(auto)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(auto)%s%C(reset) %C
+(dim blue)- %an%C(reset)%C(auto)%d%C(reset)' --all"
+
+alias lg2="git log --graph --abbrev-commit --decorate --format=format:'%C(auto)%
+h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(
+reset)%n''          %C(auto)%s%C(reset) %C(dim blue)- %an%C(reset)' --all"
+
+alias lg='lg1'
+
+function status-all
+{
+  find . -type d -print -mindepth 1 -maxdepth 1 -exec git -C {} status \;
+}
+
+function pull-all
+{
+  find . -type d -print -mindepth 1 -maxdepth 1 -exec git -C {} pull \;
+}
+
+function push-all
+{
+  find . -type d -print -mindepth 1 -maxdepth 1 -exec git -C {} push \;
+}

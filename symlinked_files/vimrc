@@ -1,0 +1,15 @@
+" Dectect the type of file that is being editied
+filetype on
+
+" Treat XC files as if they're C
+au BufRead,BufNewFile *.xc set filetype=c
+
+" Show syntax highlighting
+syntax on
+
+" Show line numbers
+set number
+
+" Highlight characters that go over 80 columns (by drawing a border on the 81st)
+set colorcolumn=81
+highlight ColorColumn ctermbg=red

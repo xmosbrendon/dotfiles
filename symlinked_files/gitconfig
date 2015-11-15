@@ -1,0 +1,9 @@
+[user]
+	name = Sam Chesney
+	email = git@samchesney.com
+[core]
+	excludefiles = ~/.gitignore_global
+[help]
+	autocorrect = 50
+[color]
+	ui = auto
