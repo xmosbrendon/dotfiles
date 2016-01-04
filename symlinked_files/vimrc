@@ -13,3 +13,15 @@ set number
 " Highlight characters that go over 80 columns (by drawing a border on the 81st)
 set colorcolumn=81
 highlight ColorColumn ctermbg=red
+
+" Handle binary files using xxd
+augroup Binary
+au!
+au BufReadPre *.bin let &bin=1
+au BufReadPost *.bin if &bin | %!xxd
+au BufReadPost *.bin set ft=xxd | endif
+au BufWritePre *.bin if &bin | %!xxd -r
+au BufWritePre *.bin endif
+au BufWritePost *.bin if &bin | %!xxd
+au BufWritePost *.bin set nomod | endif
+augroup END
