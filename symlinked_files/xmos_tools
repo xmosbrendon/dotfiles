@@ -14,7 +14,7 @@ function sbox
 
 # Local tools
 alias sxtc13='source /Applications/XMOS_xTIMEcomposer_Enterprise_13.2.2/SetEnv.sh'
-alias sxtc14='source /Applications/XMOS_xTIMEcomposer_Enterprise_14.1.0/SetEnv.sh'
+alias sxtc14='source /Applications/XMOS_xTIMEcomposer_Enterprise_14.1.2/SetEnv.sh'
 alias sxtc='sxtc14'
 alias sxdoc='source /Applications/XMOS/xdoc/2.0.18/SetEnv.sh'
 alias sxpd='source /Applications/XMOS/xSoftIPTools/2.0.9/SetEnv.sh'
