@@ -2,7 +2,7 @@
 export GREP_OPTIONS='--color=auto'
 if [ -f /opt/local/bin/src-hilite-lesspipe.sh ]; then
   # Requires source-highlight install via MacPorts
-  export LESSOPEN="| /opt/local/bin/src-hilite-lesspipe.sh %s"     
+  export LESSOPEN="| /opt/local/bin/src-hilite-lesspipe.sh %s"
   export LESS=' -R '
 fi
 alias ls='ls -FG'
