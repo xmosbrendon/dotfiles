@@ -12,7 +12,7 @@ set number
 
 " Highlight characters that go over 80 columns (by drawing a border on the 81st)
 set colorcolumn=81
-highlight ColorColumn ctermbg=red
+highlight ColorColumn ctermbg=lightgrey
 
 " Handle binary files using xxd
 augroup Binary
