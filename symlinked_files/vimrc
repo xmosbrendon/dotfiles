@@ -1,3 +1,6 @@
+" Enable mouse support
+set mouse=a
+
 " Dectect the type of file that is being editied
 filetype on
 
