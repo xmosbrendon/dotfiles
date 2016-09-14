@@ -19,7 +19,7 @@ export PS1='\h:\W \u$(__git_ps1 " (%s)")$'
 alias path='echo $PATH | tr ":" "\n"'
 alias ll='ls -l'
 alias l='tree -L 1'
-alias slime='open -a "Sublime Text"'
+alias slime='"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"'
 
 # Git shortcuts
 if [ -f ~/.git_shortcuts ]; then
