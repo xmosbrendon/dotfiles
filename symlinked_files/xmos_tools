@@ -4,9 +4,9 @@ export PATH=~/sandboxes/xgit/scripts:$PATH
 function sbox
 {
   if [ -d ./infr_scripts_pl ]; then
-    cd ./infr_scripts_pl/Build/
+    pushd ./infr_scripts_pl/Build/
     source SetupEnv
-    cd ../..
+    popd
   else
     echo "Not in a viewfile based sandbox"
   fi
