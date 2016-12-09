@@ -20,6 +20,7 @@ alias path='echo $PATH | tr ":" "\n"'
 alias ll='ls -lh'
 alias l='tree -L 1'
 alias slime='"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"'
+alias dirs='dirs -v'
 
 # Git shortcuts
 if [ -f ~/.git_shortcuts ]; then
