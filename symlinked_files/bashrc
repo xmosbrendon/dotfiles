@@ -22,6 +22,12 @@ alias l='tree -L 1'
 alias slime='"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"'
 alias dirs='dirs -v'
 
+# Environment Modules
+if [ $(command -v /usr/local/Cellar/modules/3.2.10/Modules/bin/modulecmd) ]; then
+  # Assuming installation via Brew (and so not on the PATH), if installed at all
+  source /usr/local/Cellar/modules/3.2.10/Modules/init/bash
+fi
+
 # Git shortcuts
 if [ -f ~/.git_shortcuts ]; then
   source ~/.git_shortcuts
