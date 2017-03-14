@@ -8,7 +8,7 @@ if [ $(command -v src-hilite-lesspipe.sh) ]; then
   export LESSOPEN="| src-hilite-lesspipe.sh %s"
   export LESS=' -R '
 fi
-alias ls='ls -FG'
+alias ls='ls -G'
 alias tree="tree -C"
 
 # Bash autocomplete support
