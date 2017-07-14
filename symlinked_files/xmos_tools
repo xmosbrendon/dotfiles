@@ -16,7 +16,7 @@ function sbox
 function ibox
 {
   if [ -d ./infr_scripts_pl ]; then
-    Build.pl DOMAINS=infr_apps,lib_cognidox,lib_docref_py,lib_logging_py,lib_subprocess_py,lib_xmlobject_py,lib_yaml_py,tools_released,tools_xmostest,xdoc_released
+    Build.pl VIEW=apps DOMAINS=infr_apps,lib_cognidox,lib_docref_py,lib_logging_py,lib_subprocess_py,lib_xmlobject_py,lib_yaml_py,tools_released,tools_xmostest,xdoc_released
   else
     echo "Not in a viewfile based sandbox"
   fi
