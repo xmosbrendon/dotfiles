@@ -24,6 +24,7 @@ alias ll='ls -lh'
 alias l='tree -L 1'
 alias slime='"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"'
 alias dirs='dirs -v'
+alias hexfiend='/Applications/Hex\ Fiend.app/Contents/MacOS/Hex\ Fiend &'
 
 # Environment Modules
 if [ $(command -v /usr/local/Cellar/modules/3.2.10/Modules/bin/modulecmd) ]; then
