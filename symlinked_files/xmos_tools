@@ -32,3 +32,11 @@ alias use_xmos_test='export XDE_ONLINE_URL=https://test.xmos.com'
 
 # Test apps
 alias dxsig='~/sandboxes/xsig_dev/xsig/xsig/bin/run_xsig'
+
+# XMOS tools via Environment Modules
+if [ $(command -v module) ]; then
+  # Modules tool is installed and setup
+  if [ -d ~/sandboxes/xmos_modulefiles ]; then
+    module use ~/sandboxes/xmos_modulefiles/
+  fi
+fi
