@@ -25,3 +25,24 @@ function push-all
 {
   find . -type d -print -mindepth 1 -maxdepth 1 -exec git -C {} push \;
 }
+
+function remote-all
+{
+  find . -type d -print -mindepth 1 -maxdepth 1 -exec git -C {} remote -v \;
+}
+
+function hash-all
+{
+  find . -type d -print -mindepth 1 -maxdepth 1 -exec git -C {} rev-parse HEAD \;
+}
+
+function clean-all
+{
+  find . -type d -print -mindepth 1 -maxdepth 1 -exec git -C {} clean -f \;
+}
+
+function reset-all
+{
+  find . -type d -print -mindepth 1 -maxdepth 1 -exec git -C {} reset --hard \;
+}
+
