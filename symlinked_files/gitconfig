@@ -1,6 +1,3 @@
-[user]
-	name = Sam Chesney
-	email = git@samchesney.com
 [core]
 	excludesfile = ~/.gitignore_global
 [help]
@@ -9,3 +6,5 @@
 	ui = auto
 [push]
 	default = simple
+[include]
+	path = ~/.gitconfig_untracked

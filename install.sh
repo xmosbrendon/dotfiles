@@ -1,5 +1,16 @@
 #!/bin/bash
 
+# Git user credentials are not checked in
+echo "Enter full name for Git global config:"
+read git_user_name
+echo "Enter email address for Git global config:"
+read git_user_email
+printf \
+"[user]\n\
+\tname = %s\n\
+\temail = %s\n" \
+"$git_user_name" "$git_user_email" >> ~/.gitconfig_untracked
+
 # Build list of files managed by this dotfiles repo
 cd ./symlinked_files/
 file_list=(*)
