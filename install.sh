@@ -8,7 +8,10 @@ read git_user_email
 printf \
 "[user]\n\
 \tname = %s\n\
-\temail = %s\n" \
+\temail = %s\n\
+#\tsigningkey = \n\
+#[commit]\n\
+#\tgpgSign = true\n" \
 "$git_user_name" "$git_user_email" >> ~/.gitconfig_untracked
 
 # Build list of files managed by this dotfiles repo
