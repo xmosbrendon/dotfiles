@@ -22,6 +22,9 @@ function ibox
   fi
 }
 
+# Ensure unicode quotes are displayed correctly once sbox is run
+export LANG=en_GB.UTF-8
+
 # Local tools
 alias sxtc13='source /Applications/XMOS_xTIMEcomposer_Enterprise_13.2.2/SetEnv.sh'
 alias sxtc14='source /Applications/XMOS_xTIMEcomposer_Enterprise_14.3.2/SetEnv.sh'
