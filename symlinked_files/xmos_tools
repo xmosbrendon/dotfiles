@@ -23,20 +23,7 @@ function ibox
 }
 
 # Local tools
-alias sxtc13='source /Applications/XMOS_xTIMEcomposer_Enterprise_13.2.2/SetEnv.sh'
-alias sxtc14='source /Applications/XMOS_xTIMEcomposer_Enterprise_14.3.2/SetEnv.sh'
-alias sxtc='sxtc14'
-alias sxdoc='source /Applications/XMOS/xdoc/2.0.18/SetEnv.sh'
-alias sxpd='source /Applications/XMOS/xSoftIPTools/2.0.9/SetEnv.sh'
-alias use_xmos_test='export XDE_ONLINE_URL=https://test.xmos.com'
-
-# Test apps
-alias dxsig='~/sandboxes/xsig_dev/xsig/xsig/bin/run_xsig'
-
-# XMOS tools via Environment Modules
-if [ $(command -v module) ]; then
-  # Modules tool is installed and setup
-  if [ -d ~/sandboxes/xmos_modulefiles ]; then
-    module use ~/sandboxes/xmos_modulefiles/
-  fi
-fi
+alias axe='~/axe/axe'
+alias sxtc14_3_3='source /Applications/XMOS_xTIMEcomposer_Enterprise_14.3.3/SetEnv.sh'
+alias sxtc14_3_2='source /Applications/XMOS_xTIMEcomposer_Enterprise_14.3.2/SetEnv.sh'
+alias sxtc='sxtc14_3_3'
